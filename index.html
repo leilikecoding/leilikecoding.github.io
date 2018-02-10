@@ -1,0 +1,206 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+var i;
+$(document).ready(function(){
+    $("img").click(function(){
+        for(i=0; i<8; i++){
+        $(".path").eq(i).fadeTo(20000,1);}
+        $(".text").delay(50000).css("opacity","1");
+        });
+});
+</script>
+<style>
+#bu{
+    position:absolute;
+    font-size:2em;
+    background-color:black;
+    color:white;
+    left:30%;
+    top:30%;
+}
+
+#bu:hover{
+    background-color:red;
+    color:yellow;
+}
+
+path{
+    opacity:0;
+}
+
+html, body {
+      width: 100%;
+      height: 100%;
+      margin: 0px;
+    }
+    body {
+      background-color: transparent;
+      transform: perspective(1400px) matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+      transform-style: preserve-3d;
+    }
+    .f1 {
+      position: absolute;
+      stroke: rgb(0, 0, 0);
+      stroke-width: 1px;
+      height: 220px;
+      width: 200px;
+      fill: url("#gradp2y1");
+      transition: fill 2s;
+      animation-name: colorchange;
+      animation-duration: 5s;
+      animation-iteration-count: infinite;
+      left: 460.5px;
+      top: 101.5px;
+    }
+
+    .b1 {
+      position: absolute;
+      stroke: rgb(9, 148, 4);
+      stroke-width: 1px;
+      height: 292.975px;
+      width: 229px;
+      fill: url("#gradvkjz");
+      left: 423.5px;
+      top: 243.332px;
+    }
+    .f3 {
+      position: absolute;
+      stroke: rgb(206, 32, 5);
+      stroke-width: 1px;
+      fill: rgba(155, 0, 0, 0.86);
+      width: 117.5px;
+      height: 119.5px;
+      left: 509px;
+      top: 203px;
+    }
+    .f2 {
+      position: absolute;
+      stroke: rgb(206, 32, 5);
+      stroke-width: 1px;
+      fill: rgb(172, 15, 15);
+      width: 156px;
+      height: 184px;
+      left: 460.5px;
+      top: 133.5px;
+    }
+    .f4 {
+      position: absolute;
+      stroke: rgb(206, 32, 5);
+      stroke-width: 1px;
+      height: 47px;
+      width: 109px;
+      fill: url("#gradmd0b");
+      left: 543.5px;
+      top: 180.5px;
+    }
+    .b2 {
+      position: absolute;
+      stroke: rgb(18, 130, 3);
+      stroke-width: 1px;
+      height: 49.92px;
+      width: 52.1191px;
+      fill: url("#grad15yv");
+      left: 527.215px;
+      top: 316.501px;
+    }
+    #x7{
+      position: absolute;
+      font-size: 50px;
+      color: rgb(198, 113, 22);
+      text-align: right;
+      left: 300px;
+      top: 366px;
+      font-family: "Berkshire Swash";
+      font-style: italic;
+      opacity:0;
+    }
+    .gwd-span-10qg {
+      color: rgb(191, 8, 8);
+    }
+    #img1{
+	potition: relative;
+	width: 100%;
+	height: auto;
+	opacity: 0.3;
+}
+    .image{
+	padding: 100px;
+	border: 120px;
+	position: absolute;
+	top: 25px;
+	left: 25px;
+	transition: transform 1s ease;
+}
+    .image:hover{
+      transform:scale(1.2);
+      cursor:pointer;
+    }
+  #x7{
+    text-shadow:5px 2px 4px grey;
+}
+svg{
+	width:600px;
+	height:600px;
+	left:100px;
+}
+#x8{
+  font-size:30px;
+  position:absolute;
+  color:pink;
+}
+   </style>
+    </head>
+
+    <body>
+    <img id="img1" src="https://cdn-images-1.medium.com/max/1200/1*RqTe6fv6dmw7bl7J7iFiRA.jpeg">
+  <img id="img2" data-tooltip="Click" class="image" src="pics/us.png" width="364" heihgt="300px" style="border-style: none; border-color: inherit; border-width: 0px; padding: 1px; left: 812px; top: 190px" height="317">
+       <audio src="audio/love.ogg" autoplay></audio>
+    <svg id="gwd-svg-definitions" class="">
+    <defs>
+      <linearGradient gradientUnits="userSpaceOnUse" data-gwd-stroke-width="1" x1="1" x2="108" id="gradmd0b" gradientTransform="rotate(0 54.5 23.5)">
+        <stop stop-color="rgba(183,29,29,1)" offset="1%"></stop>
+        <stop stop-color="rgba(192,17,6,0.74)" offset="97%"></stop>
+      </linearGradient>
+      <linearGradient gradientUnits="userSpaceOnUse" data-gwd-stroke-width="1" x1="1" x2="199" id="gradp2y1">
+        <stop stop-color="rgba(211,71,71,1)" offset="2%"></stop>
+        <stop stop-color="rgba(128,6,6,1)" offset="100%"></stop>
+      </linearGradient>
+      <linearGradient gradientUnits="userSpaceOnUse" data-gwd-stroke-width="1" x1="1" x2="228" id="gradvkjz">
+        <stop stop-color="rgba(51,86,3,1)" offset="2%"></stop>
+        <stop stop-color="rgba(21,144,4,1)" offset="98%"></stop>
+      </linearGradient>
+      <linearGradient gradientUnits="userSpaceOnUse" gradientTransform="rotate(0 26.0595 24.96)" data-gwd-stroke-width="1" x1="1" x2="51.119" id="grad15yv">
+        <stop stop-color="rgba(14,63,10,0.88)" offset="1%"></stop>
+        <stop stop-color="rgba(102,185,56,0.74)" offset="97%"></stop>
+      </linearGradient>
+    </defs>
+  </svg>
+       <svg data-gwd-shape="path" preserveAspectRatio="none" viewBox="0 0 200 220" class="f1">
+    <path class="path" id="x1" stroke-linecap="round" stroke-linejoin="round" d="M 31.5,0.5 C 31.5,0.5 10.5,15.5 10.5,15.5 10.5,15.5 22.5,22.5 22.5,22.5 22.5,22.5 26.5,41.5 26.5,41.5 26.5,41.5 20.5,46.5 20.5,45.5 20.5,44.5 14.5,49.5 14.5,49.5 14.5,49.5 4.5,49.5 4.5,49.5 4.5,49.5 5.167,60.834 5.5,66.5 5.5,66.5 8.5,86.5 8.5,86.5 8.5,86.5 9.5,96.5 9.5,96.5 9.5,96.5 4.5,106.5 4.5,106.5 4.5,106.5 0.5,131.5 0.5,131.5 0.5,131.5 3.5,162.5 3.5,162.5 3.5,162.5 10.5,186.5 10.5,186.5 10.5,186.5 17.5,195.5 17.5,195.5 17.5,195.5 27.5,202.5 28.5,202.5 29.5,202.5 49.5,209.5 49.5,209.5 49.5,209.5 70.5,215.5 70.5,215.5 70.5,215.5 90.5,219.5 90.5,219.5 90.5,219.5 105.5,217.5 105.5,217.5 105.5,217.5 121.5,211.5 121.5,211.5 121.5,211.5 133.5,207.5 133.5,207.5 133.5,207.5 148.5,194.5 148.5,194.5 148.5,194.5 156.5,173.5 156.5,172.5 156.5,171.5 165.5,152.5 165.5,152.5 165.5,152.5 170.5,141.5 170.5,141.5 170.5,141.5 169.5,129.5 169.5,128.5 169.5,127.5 169.5,120.5 169.5,120.5 169.5,120.5 183.5,112.5 183.5,112.5 183.5,112.5 184.5,103.5 184.5,103.5 184.5,103.5 188.5,92.5 188.5,92.5 188.5,92.5 192.5,102.5 192.5,101.5 192.5,100.5 199.5,84.5 199.5,84.5 199.5,84.5 178.5,62.5 178.5,62.5 178.5,62.5 166.5,60.5 166.5,60.5 166.5,60.5 161.5,71.5 161.5,71.5 161.5,71.5 155.5,68.5 155.5,67.5 155.5,66.5 149.5,46.5 149.5,46.5 149.5,46.5 147.5,35.5 147.5,35.5 147.5,35.5 134.5,35.5 134.5,35.5 134.5,35.5 126.5,36.5 126.5,36.5 126.5,36.5 137.5,22.5 137.5,22.5 137.5,22.5 129.5,16.5 129.5,16.5 129.5,16.5 118.5,19.5 118.5,19.5 118.5,19.5 107.5,20.5 107.5,20.5 107.5,20.5 92.5,20.5 92.5,20.5 92.5,20.5 86.5,20.5 85.5,19.5 84.5,18.5 78.5,19.5 78.5,19.5 78.5,19.5 70.5,21.5 70.5,20.5 70.5,19.5 59.5,10.5 59.5,10.5 59.5,10.5 50.5,10.5 50.5,10.5 50.5,10.5 46.5,13.5 46.5,13.5 46.5,13.5 37.5,10.5 37.5,9.5 37.5,8.5 30.5,0.5 31.5,0.5"></path>
+  </svg>
+  <svg data-gwd-shape="path" preserveAspectRatio="none" viewBox="0 0 229 292.975" class="b1" style="left: 423px; top: 243px">
+    <path class="path" id="x5" stroke-linecap="round" stroke-linejoin="round"  opacity="0" d="M 59.5,292.475 C 59.5,292.475 101.5,165.475 100.5,108.475 99.5,51.475 90.5,80.475 90.5,80.475 90.5,80.475 75.5,82.475 74.5,82.475 73.5,82.475 53.5,82.475 53.5,82.475 53.5,82.475 42.498,76.442 32.969,69.661 26.502,65.06 20.713,60.114 19.5,56.475 16.5,47.475 44.5,67.475 44.5,67.475 44.5,67.475 55.5,64.665 55.5,64.665 55.5,64.665 52.5,59.478 52.5,59.478 52.5,59.478 35.5,50.48 35.5,50.48 35.5,50.48 27.5,38.483 27.5,38.483 27.5,38.483 38.5,40.485 38.5,40.485 38.5,40.485 18.5,28.493 18.5,28.493 18.5,28.493 0.5,0.5 0.5,0.5 0.5,0.5 21.5,12.506 21.5,12.506 21.5,12.506 31.5,25.512 31.5,25.512 31.5,25.512 38.5,19.518 38.5,19.518 38.5,19.518 47.5,45.524 47.5,45.524 47.5,45.524 67.5,61.53 67.5,60.53 67.5,59.53 83.5,66.536 83.5,66.536 83.5,66.536 99.5,70.542 99.5,70.542 99.5,70.542 115.5,75.548 115.5,75.548 115.5,75.548 150.5,75.554 150.5,75.554 150.5,75.554 159.5,68.56 159.5,68.56 159.5,68.56 174.5,65.566 174.5,65.566 174.5,65.566 183.84,63.538 183.84,63.538 183.84,63.538 197.5,60.572 197.5,60.572 197.5,60.572 176.5,71.581 176.5,71.581 176.5,71.581 195.5,69.587 195.5,69.587 195.5,69.587 228.5,52.593 228.5,52.593 228.5,52.593 211.5,67.599 211.5,67.599 211.5,67.599 188.5,78.605 188.5,77.605 188.5,76.605 169.5,81.611 169.5,81.611 169.5,81.611 155.5,79.617 155.5,79.617 155.5,79.617 151.5,80.623 150.5,80.623 149.5,80.623 155.5,113.629 155.5,117.629 155.5,121.629 172.5,129.635 172.5,130.635 172.5,131.635 152.5,121.641 152.5,121.641 152.5,121.641 136.349,119.674 122.591,109.803 114.428,103.946 107.107,95.308 104.5,82.647 97.5,48.647 138.5,85.656 111.5,188.656 84.5,291.656 59.5,292.475 59.5,292.475"></path>
+  </svg>
+    <svg data-gwd-shape="path" preserveAspectRatio="none" viewBox="0 0 156 184" class="f2">
+    <path class="path" id="x2" display="none" stroke-linecap="round" stroke-linejoin="round" d="M 22.5,13.5 C 22.5,13.5 40.5,1.5 40.5,1.5 40.5,1.5 52.5,8.5 52.5,8.5 52.5,8.5 66.5,14.5 66.5,14.5 66.5,14.5 74.5,9.5 74.5,9.5 74.5,9.5 86.5,7.5 86.5,7.5 86.5,7.5 100.5,5.5 100.5,5.5 100.5,5.5 112.5,9.5 112.5,9.5 112.5,9.5 130.5,10.5 130.5,10.5 130.5,10.5 147.5,0.5 147.5,0.5 147.5,0.5 155.5,31.5 155.5,31.5 155.5,31.5 148.5,60.5 148.5,60.5 148.5,60.5 141.5,69.5 141.5,69.5 141.5,69.5 112.5,71.5 112.5,71.5 112.5,71.5 86.5,67.5 86.5,67.5 86.5,67.5 73.5,73.5 73.5,73.5 73.5,73.5 52.5,139.5 52.5,139.5 52.5,139.5 49.5,154.5 49.5,154.5 49.5,154.5 59.5,173.5 59.5,173.5 59.5,173.5 68.5,183.5 68.5,183.5 68.5,183.5 19.5,166.5 19.5,166.5 19.5,166.5 7.833,150.833 8.5,148.5 3.5,137.501 0.5,125.5 0.5,125.5 0.5,125.5 0.5,93.5 0.5,93.5 0.5,93.5 6.5,74.5 6.5,72.5 6.5,70.5 8.5,49.5 8.5,49.5 8.5,49.5 5.5,30.5 5.5,30.5 5.5,30.5 5.5,17.5 5.5,17.5 5.5,17.5 22.5,13.5 22.5,13.5"></path>
+  </svg>
+  <svg data-gwd-shape="path" preserveAspectRatio="none" viewBox="0 0 109 47" class="f4">
+    <path class="path" id="x4" display="none"stroke-linecap="round" stroke-linejoin="round" d="M 75.5,5.5 C 75.5,5.5 91.5,0.5 91.5,0.5 91.5,0.5 108.5,10.5 108.5,10.5 108.5,10.5 100.5,27.5 100.5,27.5 100.5,27.5 90.5,33.5 90.5,33.5 90.5,33.5 72.5,38.5 72.5,38.5 72.5,38.5 45.5,46.5 45.5,46.5 45.5,46.5 22.5,41.5 22.5,41.5 22.5,41.5 11.5,32.5 11.5,32.5 11.5,32.5 0.5,19.5 0.5,19.5"></path>
+  </svg>
+  <svg data-gwd-shape="path" preserveAspectRatio="none" viewBox="0 0 117.5 119.5" class="f3" style="left: 509px; top: 203px">
+    <path class="path" id="x3" display="none" stroke-linecap="round" stroke-linejoin="round" d="M 13.5,110.5 C 13.5,110.5 0.5,85.5 0.5,85.5 0.5,85.5 8.5,38.5 8.5,38.5 8.5,38.5 20.5,0.5 21.5,0.5 22.5,0.5 36.5,0.5 38.5,0.5 40.5,0.5 50.5,15.5 52.5,15.5 54.5,15.5 72.5,23.5 72.5,23.5 72.5,23.5 90,19 90,19 90,19 117,15 117,15 117,15 109.5,28.5 109.5,28.5 109.5,28.5 111.5,38.5 111.5,38.5 111.5,38.5 112,59 112,59 112,59 99.5,91.5 99.5,91.5 99.5,91.5 83.5,108.5 83.5,108.5 83.5,108.5 38,119 38,119 38,119 13.5,110.5 13.5,110.5"></path>
+  </svg>
+  <svg data-gwd-shape="path" preserveAspectRatio="none" viewBox="0 0 52.119 49.92" class="b2">
+    <path class="path" id="x6" display="none"stroke-linecap="round" stroke-linejoin="round" d="M 47.197,0.5 C 47.197,0.5 37.307,2.698 37.307,2.698 37.307,2.698 21.92,5.992 21.92,5.992 21.92,5.992 12.033,4.345 12.033,4.345 12.033,4.345 2.696,1.05 2.696,1.05 2.696,1.05 0.5,6.547 0.5,6.547 0.5,6.547 2.15,16.439 2.15,16.439 2.15,16.439 5.448,21.935 5.448,21.935 5.448,21.935 7.099,25.232 7.099,25.232 7.099,25.232 11.496,31.828 11.496,31.828 11.496,31.828 16.993,36.774 16.993,36.774 16.993,36.774 26.885,42.269 26.885,42.269 26.885,42.269 35.678,46.117 35.678,46.117 35.678,46.117 42.823,48.318 42.823,48.318 42.823,48.318 49.418,49.42 49.418,49.42 49.418,49.42 51.619,43.928 51.619,43.928 51.619,43.928 48.875,29.644 48.875,29.644 48.875,29.644 47.778,21.404 47.778,21.404 47.778,21.404 46.681,12.065 46.681,12.065 46.681,12.065 45.584,6.573 45.584,6.573 45.584,6.573 46.685,1.63 47.197,0.5"></path>
+  </svg>
+  <p id="x7" class="text">Love you forever!<br>
+    Lei<br>2018.2.14
+  </p>
+  <p id="x8" class="text" style="left: 877px; top: 550px; font-weight: lighter; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">Happy Valentines Day!
+  </p>
+
+      </body>
+</html>
