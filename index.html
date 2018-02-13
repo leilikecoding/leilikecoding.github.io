@@ -9,6 +9,7 @@ $(document).ready(function(){
         for(i=0; i<8; i++){
         $(".path").eq(i).fadeTo(20000,1);}
         $(".text").delay(50000).css("opacity","1");
+        $(".heart").delay(50000).css("opacity","0.3");
         });
 });
 </script>
@@ -151,14 +152,80 @@ svg{
   position:absolute;
   color:pink;
 }
+.heart{
+    position: fixed;
+    width: 80px;
+    height: 50px;
+    opacity:0;
+    animation:shake 8s infinite;
+}
+
+@keyframes shake{
+    0% {tranform-origin: top center;
+    transform:skew(0deg,0deg);}
+    33% {tranform-origin: top center;
+    transform:skew(6deg,6deg);}
+    66% {tranform-origin: top center;
+    transform:skew(0deg,0deg);}
+    100% {tranform-origin: top center;
+    transform:skew(-6deg,-6deg);}
+}
+
+.heart:before,
+.heart:after{
+    position: absolute;
+    content: "";
+    left: 50px;
+    top: 0;
+    width: 50px;
+    height: 80px;
+    background: rgb(255,102,102);
+    -moz-border-radius: 50px 50px 0 0;
+    border-radius: 50px 50px 0 0;
+    -webkit-transform: rotate(-45deg);
+       -moz-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+         -o-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+    -webkit-transform-origin: 0 100%;
+       -moz-transform-origin: 0 100%;
+        -ms-transform-origin: 0 100%;
+         -o-transform-origin: 0 100%;
+            transform-origin: 0 100%;
+}
+.heart:after{
+    left: 0;
+    -webkit-transform: rotate(45deg);
+       -moz-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+         -o-transform: rotate(45deg);
+            transform: rotate(45deg);
+    -webkit-transform-origin: 100% 100%;
+       -moz-transform-origin: 100% 100%;
+        -ms-transform-origin: 100% 100%;
+         -o-transform-origin: 100% 100%;
+            transform-origin :100% 100%;
+}
+
+   .auto-style1 {
+	position: relative;
+	width: 100px;
+	height: 90px;
+	animation: shake 8s infinite;
+	margin-bottom: 0px;
+}
+
+
    </style>
     </head>
 
     <body>
     <img id="img1" src="https://cdn-images-1.medium.com/max/1200/1*RqTe6fv6dmw7bl7J7iFiRA.jpeg">
-  <img id="img2" data-tooltip="Click" class="image" src="pics/us.png" width="364" heihgt="300px" style="border-style: none; border-color: inherit; border-width: 0px; padding: 1px; left: 812px; top: 190px" height="317">
+       <img id="img2" data-tooltip="Click" class="image" src="pics/us.png" width="364" heihgt="300px" style="border-style: none; border-color: inherit; border-width: 0px; padding: 1px; left: 812px; top: 190px" height="317">
        <audio src="audio/love.ogg" autoplay></audio>
-    <svg id="gwd-svg-definitions" class="">
+       <div class="heart" id="heart1" style="left: 76px; top: 84px"></div>
+       <div class="heart" id="heart2" style="left: 134px; top: 84px"></div>
+       <svg id="gwd-svg-definitions" class="">
     <defs>
       <linearGradient gradientUnits="userSpaceOnUse" data-gwd-stroke-width="1" x1="1" x2="108" id="gradmd0b" gradientTransform="rotate(0 54.5 23.5)">
         <stop stop-color="rgba(183,29,29,1)" offset="1%"></stop>
