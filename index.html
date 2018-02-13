@@ -161,14 +161,10 @@ svg{
 }
 
 @keyframes shake{
-    0% {tranform-origin: top center;
-    transform:skew(0deg,0deg);}
-    33% {tranform-origin: top center;
-    transform:skew(3deg,3deg);}
-    66% {tranform-origin: top center;
-    transform:skew(0deg,0deg);}
-    100% {tranform-origin: top center;
-    transform:skew(-3deg,-3deg);}
+    0% {transform:rotateY(30deg);}
+    33% {transform:rotateY(-30deg);}
+    66% {transform:rotateY(-30deg);}
+    100% {transform:rotateY(30deg);}
 }
 
 .heart:before,
